@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: mannyanebi/udagram-frontend:v1
+        image: mannyanebi/udagram-frontend:v2
         ports:
         - containerPort: 80
