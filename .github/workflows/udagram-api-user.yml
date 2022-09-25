@@ -22,5 +22,3 @@ jobs:
           context: ./udagram-api-user
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/udagram-api-user:v1
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/udagram-api-user:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/udagram-api-user:buildcache,mode=max

@@ -22,5 +22,3 @@ jobs:
           context: ./udagram-reverseproxy
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/udagram-reverseproxy:v1
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/udagram-reverseproxy:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/udagram-reverseproxy:buildcache,mode=max
