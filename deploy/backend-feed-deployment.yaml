@@ -17,5 +17,12 @@ spec:
       containers:
       - name: backend-feed
         image: mannyanebi/udagram-api-feed:v1
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "256m"
+          limits:
+            memory: "1024Mi"
+            cpu: "512m" 
         ports:
         - containerPort: 8080
